@@ -11,6 +11,7 @@
     font-size: 1.2rem;
     background-color: #7e2c2c17;
 }
+
 .my-name {
     font-weight: 600;
     color: midnightblue;
@@ -49,9 +50,5 @@
     font-size: 1.5rem;
     text-decoration: underline;
     text-shadow: #FF4E12 0.1rem 0.1rem 0.5rem;
-}
-
-.container {
-    font-size: larger 89 ;
 }
 
