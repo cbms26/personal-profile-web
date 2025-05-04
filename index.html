@@ -13,59 +13,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
   </head>
-  <!-- <body>
-    <header>
-      <div class="self-intro">
-        <h1>Welcome to My Profile</h1>
-        <p>
-          My name is <span class="my-name">Ngawang Tenzin</span>. I'm a
-          passionate coder and a web developer. I just love coding, breaking and
-          building things.
-        </p>
-      </div>
-      <nav class="intro-nav navbar">
-        <ul>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Albums</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <div class="daily-tasks container">
-        <h2>Daily Tasks</h2>
-        <ol>
-          <li>
-            Complete more than one lessons from Dr. Angela Yu -
-            <a href="https://www.udemy.com/home/my-courses/learning/"
-              >Web Dev Course</a
-            >.
-          </li>
-          <li>
-            Don't lose daily streak on
-            <a href="https://www.boot.dev/dashboard">boot.dev</a>. Do one lesson
-            per day.
-          </li>
-          <li>
-            Read book; currently reading
-            <span style="font-style: italic"
-              >"The God Equation" by Michio Kaku</span
-            >
-          </li>
-          <li>10mins of Typing course</li>
-        </ol>
-        
-      </div>
-    </main>
-  </body> -->
-
   <body>
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"
-        ><img src="./assets/box-seam.svg" alt="moveit brand icon" height="30" />
+        ><img class="px-2" src="./assets/person-bounding-box.svg" alt="moveit brand icon" height="30" />
         My Journey</a
       >
       <button
@@ -109,35 +62,26 @@
             </ul>
           </li>
         </ul>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Postcode"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">Check</button>
-        </form>
+        <div class="px-5-lg">
+        <button type="button" class="btn btn-success px-4">Hire</button>
+      </div>
       </div>
     </div>
   </nav>
 
   
   <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">Curious Coder CBMS</h1>
+    <h1 class="display-4 fw-bold text-body-emphasis pb-2">Curious Coder CBMS</h1>
     <div class="col-lg-6 mx-auto">
       <p class="lead mb-4">
         This website is to keep track of my lifelong journey progress check. It holds my current daily challenge and count down to my current project that I am working on. 
-        <br />
         I am on a mission to earn the Master's Certificate at the Art of Consistency. Every small step I take today contributes to my growth and success tomorrow.
       </p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">
-          Get a Quote
-        </button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">
-          Contact Us
-        </button>
+      <div class="d-grid gap-3 d-sm-flex justify-content-sm-center mb-5">
+        <a href="https://www.facebook.com/share/16R3dco7kq/?mibextid=wwXIfr"><img src="./assets/social-icons/facebook.svg" alt="Facebook logo" height="50px"></a>
+        <a href="https://www.github.com/cbms26"><img src="./assets/social-icons/github.svg" alt="GitHub logo" height="50px"></a>
+        <a href="https://www.instagram.com/curious_coder_cbms/"><img src="./assets/social-icons/instagram.svg" alt="Instagram logo" height="50px"></a>
+        <a href="https://www.youtube.com/@TimeWarp-Science"><img src="./assets/social-icons/youtube.svg" alt="Youtube logo" height="50px"></a>
       </div>
     </div>
     <div class="overflow-hidden" style="max-height: 30vh">
@@ -154,14 +98,14 @@
     </div>
   </div>
 
-  <div class="container px-4 py-5" id="featured-3">
-    <h2 class="pb-2 border-bottom">Daily Challenge</h2>
+  <div class="container px-5 pt-5" id="featured-3">
+    <h2 class="fw-bolder pb-2 border-bottom">Daily Challenge</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="feature col">
         <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
         >
-          <img src="./briefcase.svg" alt="Udemy Course" height="30" />
+          <img src="./assets/book-half.svg" alt="Udemy Course" height="100" />
         </div>
         <h3 class="fs-2">Web Development - Udemy Course</h3>
         <p>
@@ -173,9 +117,9 @@
       </div>
       <div class="feature col">
         <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
         >
-          <img src="./bus-front.svg" alt="boot.dev streak" height="30" />
+        <img src="./assets/braces.svg" alt="Udemy Course" height="100" />
         </div>
         <h3 class="fs-2">Boot.dev</h3>
         <p>
@@ -186,13 +130,9 @@
       </div>
       <div class="feature col">
         <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
         >
-          <img
-            src="./chat-square-heart.svg"
-            alt="Read book"
-            height="30"
-          />
+        <img src="./assets/bookmark-heart.svg" alt="Udemy Course" height="100" />
         </div>
         <h3 class="fs-2">Personal Touch</h3>
         <p>
@@ -204,13 +144,9 @@
       </div>
       <div class="feature col">
         <div
-          class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-primary bg-gradient fs-2 mb-3"
+          class="feature-icon d-inline-flex align-items-center justify-content-center bg-gradient fs-2 mb-3"
         >
-          <img
-            src="./chat-square-heart.svg"
-            alt="Typing Practice"
-            height="30"
-          />
+        <img src="./assets/fingerprint.svg" alt="Udemy Course" height="100" />
         </div>
         
         <h3 class="fs-2">Finger Gymnastics</h3>
@@ -219,12 +155,14 @@
         </p>
       </div>
     </div>
-    <p style="text-align: center; background-color: aliceblue; font-size: 2.5rem; padding-top: 3rem">
-      <strong
-        >Keep Record of Yourself and Progress Check Everyday. <br />
-        Small Habits Makes Compound Growth!!!</strong
-      >
-    </p>
+    </div>
+
+    <div class="container bg-gradient">
+      <footer class="py-3 my-4">
+        <p class="fs-1 text-capitalize text-center fw-bold border-bottom pb-3 mb-3">Keep record of yourself and progress check everyday.
+          small habits makes compound growth!!!</p>
+        <p class="text-center text-muted">© 2025 Curious Coder CBMS</p>
+      </footer>
     </div>
 
 

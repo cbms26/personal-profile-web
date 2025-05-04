@@ -4,51 +4,23 @@
     padding: 50px;
 }
 
-/* .self-intro {
-    padding: 0.1rem;
-    font-family: Poppins, sans-serif;
-    text-align: center;
-    font-size: 1.2rem;
-    background-color: #7e2c2c17;
+body {
+    background: linear-gradient(-45deg, #66D2CE, #2DAA9E, #EAEAEA, #E3D2C3);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    height: 100vh;
 }
 
-.my-name {
-    font-weight: 600;
-    color: midnightblue;
-}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
 
-.navbar {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    background-color: aliceblue;
-}
+    50% {
+        background-position: 100% 50%;
+    }
 
-.intro-nav {
-    padding: 2rem;
+    100% {
+        background-position: 0% 50%;
+    }
 }
-
-.navbar ul {
-    display: flex;
-    list-style: none;
-    gap: 2.6rem;
-}
-
-.navbar a {
-    color: #FF4E12;
-    text-decoration: none;
-    font-size: 1.1rem;
-    font-weight: 600;
-    text-shadow: #FFD520 0.1rem 0.1rem 0.5rem;
-}
-
-.navbar a:hover {
-    padding: 3px;
-    color: #FFD520;
-    background-color: midnightblue;
-    border-radius: 6px;
-    font-size: 1.5rem;
-    text-decoration: underline;
-    text-shadow: #FF4E12 0.1rem 0.1rem 0.5rem;
-}
- */
