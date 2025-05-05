@@ -24,3 +24,8 @@ body {
         background-position: 0% 50%;
     }
 }
+
+.social-icons>a:hover {
+    color: #2DAA9E;
+    transform: scale(1.4);
+}
