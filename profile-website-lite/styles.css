@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    background-color: #1A0033;
+    color: #fff;
+}
+
+section {
+    margin: 2.5rem 0.5rem;
+    padding: 2rem 1.2rem;
+}
+
+.intro-heading {
+    margin-bottom: 1.5rem;
+}
+
+.intro-heading * {
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    color: #00FF00;
+    padding: 6px;
+}
+
+.intro-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+.intro-content img {
+    height: 100px;
+}
+
+.intro-content * {
+    text-align: center;
+    color: #00FF00;
+}
+
+.intro-content h2 {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.intro-content p {
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+hr.solid {
+    border: 1px solid #00FFFF;
+    width: 450px;
+    margin: 2rem auto 0 auto
+}
+
+/* Skills Section */
+.skills-content-header {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.skills-content-logo {
+    height: 100px;
+}
+
+.skills-content h2 {
+    text-align: center;
+    font-family: "Press Start 2P", system-ui;
+    color: #4BFFE9;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.skills * {
+    color: #4BFFE9;
+    font-family: "VT323", monospace;
+}
+
+.skills h3 {
+    font-size: 1.8rem;
+}
+
+.right-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
