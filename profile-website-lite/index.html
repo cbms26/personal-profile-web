@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Profile Website - Lite version</title>
+    <title>Portfolio Website CBMS</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <!-- Press Start 2P Font -->
+    <!-- Press Start 2P Font - Pixel Font -->
     <link
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -16,97 +16,59 @@
       href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap"
       rel="stylesheet"
     />
+
+    <!-- minified version -->
+    <link
+      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      rel="stylesheet"
+    />
   </head>
+
   <body>
-    <section class="intro-section">
-        <div class="intro-heading">
-          <h1>I'm Ngawang Tenzin.</h1>
-          <p>A Newbie Programmer.</p>
+    <!-- Start Screen -->
+    <div id="start-screen">
+      <h1 class="start-title">Ngawang Tenzin's Portfolio</h1>
+      <i class="nes-icon is-large star"></i>
+      <i class="nes-icon is-large star"></i>
+      <i class="nes-icon is-large star"></i>
+      <p class="press-start" style="margin-top: 2rem">PRESS START</p>
+      <button id="start-button" type="button" class="nes-btn is-primary">
+        START
+      </button>
+    </div>
+
+    <!-- Game World -->
+    <div id="game-world" class="hidden">
+      <!-- Header -->
+      <header class="game-header">
+        <div class="nes-container is-dark with-title">
+          <p class="title">Hero: Ngawang Tenzin</p>
+          <div
+            style="
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+            "
+          >
+            <span>Level</span>
+            <progress
+              class="nes-progress is-success"
+              value="28"
+              max="100"
+            ></progress>
+            <div class="nes-badge">
+              <span class="is-warning">LVL 28</span>
+            </div>
+          </div>
+          <button id="back-button" type="button" class="nes-btn is-secondary">
+            Go back
+          </button>
         </div>
-        <!-- Add Retro Animation -->
-        <video width="100%" height="450" autoplay muted loop>
-          <source
-            src="./assets/bg-scene-by-premiumbeat-by-shutterstock.mp4"
-            type="video/mp4"
-          />
-          Video Format unsupported
-        </video>
+      </header>
 
+      <!-- Main Content -->
+    </div>
 
-      <!-- Add img or logo related to Hello -->
-
-      <div class="intro-content">
-        <img src="./assets/home_max_dots.svg" alt="Dotted Logo" />
-        <h2>Hello!</h2>
-        <p>
-          I am an Android and Web Developer. I am overwhelmed with startup
-          project ideas that prevents me from being a founder/CEO. I am powered
-          by coffee and curiosity
-        </p>
-      </div>
-    </section>
-    <!-- Create a horizontal separater and goes under this comment -->
-    <hr class="solid" />
-
-    <!-- Add img or logo related to skills -->
-    <section class="skills-section">
-      <div class="container skills-content">
-        <div class="skills-content-header">
-          <img
-            class="skills-content-logo"
-            src="./assets/neurology.svg"
-            alt="Skills Logo"
-          />
-          <h2>My Skills</h2>
-          </div>
-        </div>
-        <div class="skills skill1">
-          <div class="left-content">
-            <img
-              src="https://media.tenor.com/PbeG0TZYTSEAAAAM/typing-on-a-computer-courage.gif"
-              alt="Courage The Cowardly Dog Typing"
-            />
-          </div>
-          <div class="right-content">
-            <h3>Designing & Development</h3>
-            <p>
-              I started learning to code when I was studying my Bachelor's
-              degree in 2016. However, I lost track of myself until recently I
-              started to take my coding career seroiusly. So, the curiosity on
-              how things work behind the scene helps me keep push forward, and I
-              will continue to keep on Learning.
-            </p>
-          </div>
-        </div>
-        <div class="skills skill2">
-          <div class="left-content">
-            <img
-              src="https://media.tenor.com/sSyknxvD2xEAAAAM/ml101-moba101.gif"
-              alt="Hero Layla Laughing MLBB Sticker"
-            />
-          </div>
-          <div class="right-content">
-            <h3>Mobile Legends: Bang Bang</h3>
-            <p>
-              If you have no idea what that is, it's a mobile game. I'm
-              completely in love with that game....hehe!
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact">
-      <h2>Get In Touch</h2>
-      <p>
-        Are you also overwhelmed with ideas, a curious coder, and crazy towards
-        MLBB? Reach out lets get lost in those ideas, be curious of everthing,
-        and queue together on MLBB.
-      </p>
-      <button class="contact-btn">Contact Now</button>
-    </section>
-    <footer class="footer">
-      <p>&copy;2025 Curious Coder CBMS. All rights reserved.</p>
-    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
