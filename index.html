@@ -17,9 +17,9 @@
       rel="stylesheet"
     />
 
-    <!-- minified version -->
+    <!-- latest -->
     <link
-      href="https://unpkg.com/nes.css@2.3.0/css/nes.min.css"
+      href="https://unpkg.com/nes.css@latest/css/nes.min.css"
       rel="stylesheet"
     />
   </head>
@@ -27,7 +27,7 @@
   <body>
     <!-- Start Screen -->
     <div id="start-screen">
-      <h1 class="start-title">Ngawang Tenzin's Portfolio</h1>
+      <h1 class="start-title">Curious Coder CBMS</h1>
       <i class="nes-icon is-large star"></i>
       <i class="nes-icon is-large star"></i>
       <i class="nes-icon is-large star"></i>
@@ -57,16 +57,80 @@
               max="100"
             ></progress>
             <div class="nes-badge">
+              <!-- Level = Age -->
               <span class="is-warning">LVL 28</span>
             </div>
           </div>
-          <button id="back-button" type="button" class="nes-btn is-secondary">
+          <button id="back-button" type="button" class="nes-btn is-error">
             Go back
           </button>
         </div>
       </header>
 
       <!-- Main Content -->
+      <main class="game-main">
+        <!-- Navigation -->
+        <nav id="hero-stats-nav" class="nes-container is-dark with-title">
+          <p class="title">Hero Stats</p>
+          <a
+            href="#"
+            class="nes-btn is-fullwidth map-location"
+            data-section="about"
+          >
+            <i class="nes-icon star is-small"></i> Hero's Profile
+          </a>
+          <a
+            href="#"
+            class="nes-btn is-success is-fullwidth map-location"
+            data-section="skills"
+          >
+            <i class="nes-icon star is-small"></i> Hero Skills
+          </a>
+          <a
+            href="#"
+            class="nes-btn is-primary is-fullwidth map-location"
+            data-section="projects"
+          >
+            <i class="nes-icon trophy is-small"></i> Quest Log
+          </a>
+          <a
+            href="#"
+            class="nes-btn is-fullwidth map-location"
+            data-section="experience"
+          >
+            <i class="nes-icon star is-small"></i> Journey
+          </a>
+          <a
+            href="#"
+            class="nes-btn is-warning is-fullwidth map-location"
+            data-section="contact"
+          >
+            <i class="nes-icon gmail is-small"></i> Summon
+          </a>
+        </nav>
+
+        <!-- Display Content -->
+        <section
+          id="content-display"
+          class="nes-container with-title is-centered"
+        >
+          <p id="content-title" class="title">ADVENTURE AWAITS</p>
+          <div id="text-content">
+            <p>
+              Select from <strong>Hero Stats</strong> to Learn More about this
+              Hero!
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <!-- FOOTER -->
+      <footer class="game-footer">
+        <p>
+          © 2025 Ngawang Tenzin. All rights reserved.
+          <i class="nes-icon heart"></i>
+        </p>
+      </footer>
     </div>
 
     <script src="./script.js"></script>

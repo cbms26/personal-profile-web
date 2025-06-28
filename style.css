@@ -155,8 +155,83 @@ body::before {
     }
 }
 
+/* Main-Content: Game World */
+#game-world {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "main"
+        "footer";
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    padding: 1rem;
+    box-sizing: border-box;
+}
 
+.game-header {
+    grid-area: header;
+}
 
+.game-main {
+    grid-area: main;
+    display: flex;
+    gap: 2rem;
+    overflow: hidden;
+}
+
+.game-footer {
+    grid-area: footer;
+}
+
+/*Navigation: Hero Stats */
+#hero-stats-nav {
+    width: 35%;
+    padding: 1rem;
+}
+
+#hero-stats-nav .map-location {
+    margin-bottom: 1.5rem;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+#hero-stats-nav .map-location:hover,
+#hero-stats-nav .map-location.is-active {
+    background-color: #525252 !important;
+    /* Override nes.css */
+    transform: translateY(-2px);
+}
+
+/* Display Content  */
+#content-display {
+    width: 65%;
+    height: calc(100% - 2rem);
+    /*Full height minus padding*/
+}
+
+#text-content {
+    height: 90%;
+    font-size: 36px;
+    font-family: "VT323", monospace;
+    font-weight: 400;
+    font-style: normal;
+    overflow-y: auto;
+    word-wrap: break-word;
+}
+
+/* Custom content styling */
+.skill-item {
+    margin-bottom: 1.5rem;
+}
+
+.project-card {
+    margin-bottom: 2rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+}
 
 /* Utility */
 .hidden {

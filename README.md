@@ -8,8 +8,14 @@ Welcome to my portfolio website! This site will showcases my projects, skills, a
 
 - HTML5
 - CSS3 (with NES.css)
-- JavaScript (vanilla)
+- JavaScript (Vanilla)
 - NES.css
 - Google Fonts (Press Start 2P, VT323)
 
 ---
+
+## Features
+
+- Start Screen that has start button, directs to Hero Scene
+- Navigation Menu, on the left, with Content to be displayed on the right-panel.
+-
