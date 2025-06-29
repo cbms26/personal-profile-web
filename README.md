@@ -18,4 +18,4 @@ Welcome to my portfolio website! This site will showcases my projects, skills, a
 
 - Start Screen that has start button, directs to Hero Scene
 - Navigation Menu, on the left, with Content to be displayed on the right-panel.
--
+- Mobile Responsiveness Layout
