@@ -17,23 +17,47 @@ document.addEventListener("DOMContentLoaded", () => {
     startScreen.classList.remove("hidden");
   });
 
-  // Event Listener for Navigations
-  mapLocations.forEach((location) => {
-    location.addEventListener("click", (e) => {
+  // // Event Listener for Navigations
+  // mapLocations.forEach((location) => {
+  //   location.addEventListener("click", (e) => {
+  //     e.preventDefault();
+
+  //     // Remove active class from all locations
+  //     mapLocations.forEach((loc) => loc.classList.remove("is-active"));
+
+  //     // Add active class to clicked location
+  //     const clickedLocation = e.currentTarget;
+  //     clickedLocation.classList.add("is-active");
+
+  //     const section = clickedLocation.dataset.section;
+  //     if (portfolioContent[section]) {
+  //       contentTitle.textContent = portfolioContent[section].title;
+  //       typewriter(portfolioContent[section].content, textContent);
+  //     }
+  //   });
+  // });
+
+  // Hamburger Menu Functionality - Only open/close
+  const mobileMenuToggle = document.getElementById("mobile-menu-toggle");
+  const heroStatsNav = document.getElementById("hero-stats-nav");
+
+  if (mobileMenuToggle && heroStatsNav) {
+    // Toggle hamburger menu on click
+    mobileMenuToggle.addEventListener("click", (e) => {
       e.preventDefault();
+      e.stopPropagation();
+      mobileMenuToggle.classList.toggle("active");
+      heroStatsNav.classList.toggle("mobile-menu-open");
+    });
 
-      // Remove active class from all locations
-      mapLocations.forEach((loc) => loc.classList.remove("is-active"));
-
-      // Add active class to clicked location
-      const clickedLocation = e.currentTarget;
-      clickedLocation.classList.add("is-active");
-
-      const section = clickedLocation.dataset.section;
-      if (portfolioContent[section]) {
-        contentTitle.textContent = portfolioContent[section].title;
-        typewriter(portfolioContent[section].content, textContent);
+    // Close menu when clicking outside
+    document.addEventListener("click", (e) => {
+      if (window.innerWidth <= 768) {
+        if (!heroStatsNav.contains(e.target)) {
+          mobileMenuToggle.classList.remove("active");
+          heroStatsNav.classList.remove("mobile-menu-open");
+        }
       }
     });
-  });
+  }
 });
