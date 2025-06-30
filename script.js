@@ -35,6 +35,52 @@ document.addEventListener("DOMContentLoaded", () => {
           </p>
         </div>`,
     },
+    projects: {
+      title: "QUEST LOG",
+      content: `
+      <div class="nes-container with-title is-dark project-card">
+        <p class="title">JCUB Student Board | Academic Project | WordPress | CMS</p>
+        <a href="#" class="nes-btn">Know More</a>
+      </div>
+      <div class="nes-container with-title is-dark project-card">
+        <p class="title">Utility App | Academic Project | Java | Mobile Dev</p>
+        <a href="#" class="nes-btn">Know More</a>
+      </div>
+      <div class="nes-container with-title is-dark project-card">
+        <p class="title">Barma Sorig Web App | Self Project | Full-Stack Dev</p>
+        <a href="#" class="nes-btn">Know More</a>
+      </div>
+      <div class="nes-container with-title is-dark project-card">
+        <a href="#" class="nes-btn"> Explore minor projects achieved by this Hero.</a>
+      </div>
+      `,
+    },
+    experience: {
+      title: "THE JOURNEY",
+      content: `
+      <div class="nes-list is-disc">
+        <p>I may not have years of experience yet, but I have the drive to learn and the courage to begin.</p> 
+        <p>With every challenge, I grow! Not just in skill, but in mindset.
+        This is just the start, and I'm here for the long run.</p>      
+      </div>`,
+    },
+    contact: {
+      title: "SUMMONING CIRCLE",
+      content: `
+      <h2>Get In Touch</h2>
+      <p>
+        Are you also overwhelmed with ideas, a curious coder or crazy towards
+        MLBB? Reach out lets get lost in those ideas, be curious of everthing,
+        and queue together on MLBB. Email to:
+      </p>
+      <a href="mailto:coder.cbms@gmail.com">coder.cbms@gmail.com</a>
+      <div style="margin-top: 2rem;">
+        <a href="#"><i class="nes-icon linkedin is-medium"></i></a>
+        <a href="#"><i class="nes-icon github is-medium"></i></a>
+        <a href="#"><i class="nes-icon twitter is-medium"></i></a>
+      </div>
+      `,
+    },
   };
 
   // Typing Effect
