@@ -229,6 +229,20 @@ body::before {
     margin-bottom: 2rem;
 }
 
+.social-links-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-links-grid .nes-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
 /* Footer */
 footer {
     text-align: center;
@@ -239,6 +253,20 @@ footer {
     display: none !important;
 }
 
+#content-title {
+    color: #000;
+    /* Black text color */
+    background-color: #fff;
+    padding: 0.5rem 1rem;
+    display: inline-block;
+    margin-bottom: 1rem;
+    border: 2px solid #000;
+}
+
+.nes-container.with-title>.title {
+    color: #000;
+    /* Ensure text is visible on white background */
+}
 
 /* Mobile View:  */
 @media (max-width: 768px) {

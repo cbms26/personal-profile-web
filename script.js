@@ -13,11 +13,34 @@ document.addEventListener("DOMContentLoaded", () => {
   // Utilizing HTML strings to leverage NES.css components inside of the content
   const portfolioContent = {
     about: {
-      title: "HERO's PRofile",
+      title: "HERO PROFILE",
       content: `
               <p>WELCOME! I'm Ngawang Tenzin, a passionate Android and Web Developer. I am overwhelmed with startup project ideas that prevents me from being a Founder/CEO.</p>
+              <hr />
+              <div class="nes-container with-title is-dark">
+                <p class="title">Social Links</p>
+                <div class="social-links-grid">
+                  <a href="https://www.linkedin.com/in/your-linkedin" target="_blank" class="nes-btn">
+                    <i class="nes-icon linkedin"></i> LinkedIn
+                  </a>
+                  <a href="https://www.facebook.com/your-facebook" target="_blank" class="nes-btn">
+                    <i class="nes-icon facebook"></i> Facebook
+                  </a>
+                  <a href="https://www.youtube.com/your-channel" target="_blank" class="nes-btn">
+                    <i class="nes-icon youtube"></i> YouTube
+                  </a>
+                  <a href="https://www.instagram.com/your-instagram" target="_blank" class="nes-btn">
+                    <i class="nes-icon instagram"></i> Instagram
+                  </a>
+                  <a href="https://www.tiktok.com/@your-tiktok" target="_blank" class="nes-btn">
+                    <i class="nes-icon star"></i> TikTok
+                  </a>
+                  <a href="https://your-portfolio-website.com" target="_blank" class="nes-btn">
+                    <i class="nes-icon star"></i> Portfolio
+                  </a>
+                </div>
+              </div>
               <p>Powered by <i class="nes-icon heart"></i> coffee and curiosity, I chase inspiration one line of code at a time.</p>
-              
       `,
     },
     skills: {
@@ -40,7 +63,7 @@ document.addEventListener("DOMContentLoaded", () => {
       content: `
       <div class="nes-container with-title is-dark project-card">
         <p class="title">JCUB Student Board | Academic Project | WordPress | CMS</p>
-        <a href="#" class="nes-btn">Know More</a>
+        <a href="https://github.com/cbms26/my-child-theme" class="nes-btn" target="_blank" rel="noopener noreferrer">Know More</a>
       </div>
       <div class="nes-container with-title is-dark project-card">
         <p class="title">Utility App | Academic Project | Java | Mobile Dev</p>
@@ -145,7 +168,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
       const section = clickedLocation.dataset.section;
       if (portfolioContent[section]) {
+        console.log("Setting title to:", portfolioContent[section].title);
         contentTitle.textContent = portfolioContent[section].title;
+        console.log("Content title element:", contentTitle);
+        console.log(
+          "Content title style:",
+          window.getComputedStyle(contentTitle)
+        );
         typewriter(portfolioContent[section].content, textContent);
       }
     });
